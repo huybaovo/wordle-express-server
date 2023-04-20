@@ -12,7 +12,7 @@ function send__random_word() {
 app.use(cors())
 
 app.get("/", (req:Request, res:Response) => {
-    res.send({secret_word: send__random_word()})
+    res.send({ secret: send__random_word() })
 });
 
 app.listen(PORT, () => {
